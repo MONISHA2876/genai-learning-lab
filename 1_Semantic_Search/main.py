@@ -15,7 +15,7 @@ documents = [
     "Leonardo da Vinci painted the Mona Lisa in the early 1500s.",
     "Vincent van Gogh painted The Starry Night in 1889.",
 ]
-query = "How do plants get energy?"
+query = "who gravity is the strongest ?"
 
 client = genai.Client()
 
@@ -41,4 +41,4 @@ for i, e in enumerate(doc_embeddings):
 
 result.sort(key=lambda x:x[1], reverse=True)
 
-print("After Sementic search the most similar content found is : \n\n documents[result[0][0]] \n")
+print(f"After Semantic search the most similar content found is : \n\n {documents[result[0][0]]} \n")
